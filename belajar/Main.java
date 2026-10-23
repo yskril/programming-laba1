@@ -42,12 +42,12 @@ public class Main {
         } else {
             // ( A / B ) ^ C
             double a = Math.pow(
-                    Math.pow(Math.sin(x), 3.0 / 4) / Math.pow(Math.PI / x, x),
+                    Math.pow(Math.sin(x), 3.0 / 4) / Math.pow(x / 2.0, x),
                     2 * Math.atan(Math.cos(x)));
             double b = 1 - Math.atan(Math.sin(
                     Math.pow(Math.PI / (Math.PI + Math.tan(x)), Math.pow(2 * x, 2))));
             double c = Math.sin(Math.pow(
-                    (0.5 + Math.pow(x, x - (x - 3))) / Math.pow(x, Math.PI / 3), 2));
+                    (0.5 + Math.pow(x, x - (x - 3))) / Math.pow(x, x / 2.0), 2));
             return Math.pow(a / b, c);
         }
     }
