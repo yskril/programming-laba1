@@ -47,7 +47,7 @@ public class Main {
             double b = 1 - Math.atan(Math.sin(
                     Math.pow(Math.PI / (Math.PI + Math.tan(x)), Math.pow(2 * x, 2))));
             double c = Math.sin(Math.pow(
-                    (0.5 + Math.pow(x, x - (x - 3))) / Math.pow(x, x / 2.0), 2));
+                    (0.5 + Math.pow(x, x * (x - 3))) / Math.pow(x, x / 2.0), 2));
             return Math.pow(a / b, c);
         }
     }
